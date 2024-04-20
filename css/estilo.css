@@ -42,6 +42,7 @@ html[data-theme='light'] .brand-logo {
 * {
     margin: 0;      /*margem*/  
     padding: 0;     /* espaçamento */
+    box-sizing: border-box;
     vertical-align: baseline;
     list-style: none;
     scrollbar-width: thin;
@@ -160,7 +161,7 @@ p {
 }
 .menu-mobile{     
     width: 100vw;
-    position: fixed;
+   /*  position: fixed; */
     bottom: 0;
     justify-content: space-between;
     border-top: 2px solid var(--primary-border-color);
@@ -189,7 +190,7 @@ p {
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
-    width: 100%;
+    /* width: 100%; */
     padding: 0.875rem 1.5rem;
     background: transparent;
     border-radius: 3.125rem;
@@ -262,7 +263,36 @@ p {
 }
 .tecnologias-logo{
     height: 2.4rem;
+}
+/* ------- fim section ------- */
 
+/* Projetos */
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.prjetos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
 
-/* ------- fim section ------- */
+.projetos-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.cartao {
+   width: 100%;
+   border-radius: 0.5rem;
+   object-fit: cover;
+   object-position: center;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+    gap: 1rem;
+}
