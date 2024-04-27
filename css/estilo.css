@@ -517,6 +517,11 @@ footer p {
         align-items: flex-start;
         gap: 4rem;
     }
-
+    .sobre-decricao h2 {
+        text-align: left;
+    }
+    .descricao-button {
+        justify-content: flex-start;
+    }
 
 }
