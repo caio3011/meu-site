@@ -190,7 +190,7 @@ p {
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
-    /* width: 100%; */
+    width: 100%;
     padding: 0.875rem 1.5rem;
     background: transparent;
     border-radius: 3.125rem;
@@ -273,13 +273,13 @@ p {
     flex-direction: column;
     gap: 2rem;
 }
-.prjetos-container {
+.projetos-container {
     display: flex;
     flex-direction: column;
     gap: 4rem;
 }
 
-.projetos-card {
+.projeto-card {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -475,7 +475,7 @@ footer p {
     h2 {
         font-size: 3rem;
     }
-    main, .projeto, .sobre { /* Desgrudou dos cantos deixando tudo no centro */
+    #home, .projetos, .sobre { /* Desgrudou dos cantos deixando tudo no centro */
         padding: 8rem 6rem 4rem 6rem;
     }
     .contato p {
@@ -496,11 +496,11 @@ footer p {
 }
 
 @media (min-width: 992px ) {
-    .projetos-card {
+    .projeto-card {
         flex-direction: row;
     }
 
-    .projetos-card .card-reverso {
+    .projeto-card.card-reverso {
         flex-direction: row-reverse;
         justify-content: space-between;
     }
@@ -523,5 +523,31 @@ footer p {
     .descricao-button {
         justify-content: flex-start;
     }
-
+}
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 4rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+    #home {
+        padding: 12rem 6rem 2rem;
+    }
+    .main-content .btn {
+        width: auto;
+    }
+    .tecnologias{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10rem 6rem 4rem;
+    }
+    .tecnologias h2 {
+        font-size: 3rem;
+        width: 55%;
+    }
+    .tecnologias-lista {
+        gap: 1rem;
+    }
+    
 }
